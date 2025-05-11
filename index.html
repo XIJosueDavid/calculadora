@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Civil UAN - Ingenieria de Software</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Calculadora de Magnitudes Físicas</h1>
+        <h2>Ingenier&iacute;a de Software</h2>
+
+        <select id="calculoSeleccionado" onChange="mostrarFormulario()">
+            <option value="">Seleccione un calculo</option>
+            <option value="velocidad">Velocidad</option>
+            <option value="aceleracion">Aceleracion</option>
+            <option value="fuerza">Fuerza</option>
+            <option value="trabajo">Trabajo</option>
+            <option value="cinetica">Energia Cinetica</option>
+            <option value="epgravitatoria">Energia Potencial Gravitatoria</option>
+            <option value="densidad">Densidad</option>
+            <option value="presion">Presion</option>
+            <option value="cargaelectrica">Carga Electrica</option>
+            <option value="leyohm">Ley de Ohm</option>
+        </select>
+
+        <form id="formulario"></form>
+
+        <div id="resultado" class="resultado"></div>
+
+        <footer>Dise&ntilde;ado por Ing. Josue Rodriguez</footer>
+    </div>
+    <script src="funciones.js"></script>
+</body>
+</html>
